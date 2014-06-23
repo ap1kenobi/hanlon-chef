@@ -1,0 +1,12 @@
+diff -rupN org_ipxe/src/config/general.h ipxe/src/config/general.h
+--- org_ipxe/src/config/general.h	2014-06-11 08:07:39.193081793 -0400
++++ ipxe/src/config/general.h	2014-06-10 15:15:30.628188405 -0400
+@@ -111,7 +111,7 @@ FILE_LICENCE ( GPL2_OR_LATER );
+ //#define	IMAGE_PXE		/* PXE image support */
+ //#define	IMAGE_SCRIPT		/* iPXE script image support */
+ //#define	IMAGE_BZIMAGE		/* Linux bzImage image support */
+-//#define	IMAGE_COMBOOT		/* SYSLINUX COMBOOT image support */
++#define	IMAGE_COMBOOT		/* SYSLINUX COMBOOT image support */
+ //#define	IMAGE_EFI		/* EFI image support */
+ //#define	IMAGE_SDI		/* SDI image support */
+ //#define	IMAGE_PNM		/* PNM image support */

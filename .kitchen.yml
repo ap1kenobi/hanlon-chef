@@ -1,0 +1,17 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-14.04
+    driver_config:
+      box: ubuntu/trusty64
+      
+suites:
+  - name: Hanlon
+    run_list:
+      - recipe[hanlon::default]
+    attributes:
